@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#FFF9EF" />
+    <meta
+      name="description"
+      content="Vikram &amp; Manon Wedding Invitation • 14 &amp; 15 November 2026, Hotel The Savera, Chennai. Tap to open the digital invitation with traditional music &amp; event details."
+    />
+    <title>Vikram &amp; Manon — Shubha Vivaham | Wedding Invitation</title>
+
+    <!-- ===================================================================== -->
+    <!-- MAX-OPTIMIZED OPEN GRAPH & WHATSAPP SOCIAL PREVIEW TAGS                -->
+    <!-- Verified against WhatsApp Link Preview, Facebook & Twitter standards   -->
+    <!-- Image size < 300KB (strict WhatsApp requirement: 194KB & 184KB)         -->
+    <!-- ===================================================================== -->
+    <meta property="og:site_name" content="InviteStory" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content="Vikram &amp; Manon — Shubha Vivaham | Wedding Invitation" />
+    <meta
+      property="og:description"
+      content="Vikram &amp; Manon Wedding Invitation • 14 &amp; 15 November 2026, Hotel The Savera, Chennai. Tap to view the digital invitation, events &amp; timings."
+    />
+    <meta property="og:url" content="./" />
+
+    <!-- 1. Universal Landscape Card (1200x630 px · 194 KB JPEG) -->
+    <meta property="og:image" content="assets/img/og-image.jpg" />
+    <meta property="og:image:secure_url" content="assets/img/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Vikram &amp; Manon — Shubha Vivaham Wedding Invitation" />
+
+    <!-- 2. WhatsApp Mobile Dedicated Square Thumbnail (800x800 px · 184 KB JPEG) -->
+    <meta property="og:image" content="assets/img/og-whatsapp.jpg" />
+    <meta property="og:image:secure_url" content="assets/img/og-whatsapp.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+
+    <!-- Schema.org Microdata & Crawler Fallbacks for WhatsApp / Google -->
+    <meta itemprop="name" content="Vikram &amp; Manon — Shubha Vivaham | Wedding Invitation" />
+    <meta itemprop="description" content="Vikram &amp; Manon Wedding Invitation • 14 &amp; 15 November 2026, Hotel The Savera, Chennai." />
+    <meta itemprop="image" content="assets/img/og-image.jpg" />
+    <link rel="image_src" href="assets/img/og-image.jpg" />
+
+    <!-- Twitter / X Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vikram &amp; Manon — Shubha Vivaham" />
+    <meta
+      name="twitter:description"
+      content="Wedding on Sunday, 15 Nov 2026 and Reception on Saturday, 14 Nov 2026 at Hotel The Savera, Chennai."
+    />
+    <meta name="twitter:image" content="assets/img/og-image.jpg" />
+
+    <!-- Dynamic absolute URL resolver for webviews & scrapers inspecting live DOM -->
+    <script>
+      (function () {
+        try {
+          var o = window.location.origin;
+          var p = window.location.pathname.replace(/\/[^\/]*$/, '/');
+          var b = (o && o !== 'null') ? (o + p) : '';
+          if (!b) return;
+          var sel = 'meta[property^="og:image"], meta[name="twitter:image"], meta[itemprop="image"], link[rel="image_src"]';
+          var nodes = document.querySelectorAll(sel);
+          for (var i = 0; i < nodes.length; i++) {
+            var a = nodes[i].hasAttribute('content') ? 'content' : 'href';
+            var v = nodes[i].getAttribute(a);
+            if (v && !/^https?:\/\//i.test(v)) {
+              nodes[i].setAttribute(a, b + v.replace(/^\.?\//, ''));
+            }
+          }
+          var u = document.querySelector('meta[property="og:url"]');
+          if (u) {
+            var c = u.getAttribute('content');
+            if (!c || c === './' || c.indexOf('YOUR-SITE') !== -1 || !/^https?:\/\//i.test(c)) {
+              u.setAttribute('content', window.location.href);
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="external/fonts.googleapis.com/css2-1836f8b6f7.css"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+    <!-- the mandap artwork is the first thing on screen: fetch it early -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/img/gopuram.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <link rel="preload" as="image" href="assets/img/couple.png" fetchpriority="high" />
+    <link rel="preload" as="audio" href="assets/music.mp3" type="audio/mpeg" />
+
+    <script src="./editable/wedding-data.js"></script>
+    <script type="module" crossorigin src="assets/index-D4tjOMjU.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-B2yKB5Bb.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
