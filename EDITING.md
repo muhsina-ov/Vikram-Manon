@@ -33,7 +33,7 @@ All text, dates, events, venue, and image references live in:
   - `venueAddress`: `"No. 146, Dr. Radhakrishnan Salai, Chennai, TN - 600 034"`
   - `mapsQuery`: Search query for Google Maps embed and directions
 - **Footer**:
-  - `footerBlessing`: `"மணமகன் அழைப்பு · Invitation from the Groom's side"`
+  - `footerBlessing`: `""` (empty / side indicator removed)
   - `creditLine`: `"Crafted with ♥ by InviteStory · @invitestory.in"`
 
 ## Replacing Photographs (Customer Real Photos)

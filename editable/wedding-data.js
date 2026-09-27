@@ -100,8 +100,8 @@ window.WEDDING_DATA = {
   mapsQuery: "Hotel The Savera, No. 146, Dr. Radhakrishnan Salai, Mylapore, Chennai, Tamil Nadu 600004",
 
   // --------------------------------------------------------------- footer --
-  // "(இரு பக்கம்) அழைப்பு" — printed at the foot of the customer's card.
-  footerBlessing: "மணமகன் அழைப்பு · Invitation from the Groom's side",
+  // Footer blessing / side indicator (empty if not needed)
+  footerBlessing: "",
   creditLine: "Crafted with love by InviteStory · @invitestory.in",
 
   // ------------------------------------------------------- mandap opening --
