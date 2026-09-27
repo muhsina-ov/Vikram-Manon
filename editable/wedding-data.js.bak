@@ -9,8 +9,8 @@
 
 window.WEDDING_DATA = {
   // ---------------------------------------------------------------- couple --
-  groomFirst: "Vikram",
   brideFirst: "Manon",
+  groomFirst: "Vikram",
 
   // Wax-seal monogram on the invitation envelope.
   monogram: "V · M",
@@ -25,8 +25,8 @@ window.WEDDING_DATA = {
   // Hero date badge (wedding date).
   dateBadge: "15 · 11 · 2026",
 
-  // Couple portrait (placed in editable/assets/couple.png or couple.jpg)
-  coupleImage: "./editable/assets/couple.png",
+  // South Indian couple illustration from the Shubha Vivaham template.
+  coupleImage: "./assets/img/couple.png",
 
   // ------------------------------------------------------------- greetings --
   // Tamil heading exactly as printed on the customer's card.
@@ -101,8 +101,8 @@ window.WEDDING_DATA = {
 
   // --------------------------------------------------------------- footer --
   // "(இரு பக்கம்) அழைப்பு" — printed at the foot of the customer's card.
-  footerBlessing: "மணமகன் அழைப்பு · Invitation from the Groom's side",
-  creditLine: "Crafted with love by InviteStory · @invitestory.in",
+  footerBlessing: "(இரு பக்கம்) அழைப்பு · Invitation from both sides",
+  creditLine: "Crafted with ♥ by InviteStory · @invitestory.in",
 
   // ------------------------------------------------------- mandap opening --
   mandap: {
