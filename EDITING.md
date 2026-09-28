@@ -17,7 +17,7 @@ All text, dates, events, venue, and image references live in:
 - **Greetings & Parents**:
   - `greetingTamil`: Tamil heading (`"திருமண விழா அழைப்பித்தம்"`)
   - `greetingEnglish`: English greeting (`"Shubha Vivaham"`)
-  - `blessingTamil`: Auspicious Tamil blessing (`"ஸ்ரீ பண்டியத்தின் துணை"`)
+  - `blessingTamil`: Auspicious Tamil blessing (`"ஸ்ரீ பச்சையம்மன் துணை"`)
   - `groomParents`: Groom parents statement (appears first)
   - `brideParents`: Bride parents statement (appears second)
 - **Invitation & Countdown**:

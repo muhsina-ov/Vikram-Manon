@@ -447,20 +447,109 @@
 }
 
 /* -------------------------------------------------------------------------
-   5. SCROLL INDICATION BADGE
+   5. SCROLL UP INDICATION BADGE (PERFECTLY VISIBLE ON FIRST/OPENING SECTION)
    ------------------------------------------------------------------------- */
+.scroll-indicator-wrapper {
+  position: fixed;
+  bottom: max(1.25rem, calc(env(safe-area-inset-bottom) + 0.85rem));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 45;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: auto;
+}
+
+.scroll-indicator-wrapper.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 14px);
+}
+
+.scroll-indicator-wrapper.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  animation: scroll-wrapper-fadein 0.8s ease 0.3s both;
+}
+
+@keyframes scroll-wrapper-fadein {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 16px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
 .scroll-indicator-badge {
-  animation: scroll-badge-bounce 2.4s ease-in-out infinite;
+  background: rgba(38, 14, 25, 0.94);
+  border: 1.5px solid rgba(246, 185, 59, 0.85);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45), 0 0 16px rgba(246, 185, 59, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #fff8e7;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: scroll-badge-bounce 2.2s ease-in-out infinite;
+}
+
+.scroll-indicator-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.55), 0 0 22px rgba(246, 185, 59, 0.5);
+}
+
+.scroll-indicator-badge:active {
+  transform: scale(0.96);
+}
+
+.scroll-indicator-text {
+  font-family: Cinzel, serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #fff8e7;
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .scroll-indicator-text {
+    font-size: 12px;
+  }
+}
+
+.scroll-up-arrow {
+  color: #f7d784;
+  flex-shrink: 0;
+}
+
+@keyframes scroll-hint-up {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.85;
+  }
+  50% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}
+
+.animate-scroll-hint-up {
+  animation: scroll-hint-up 1.6s ease-in-out infinite !important;
 }
 
 @keyframes scroll-badge-bounce {
   0%, 100% {
     transform: translateY(0);
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45), 0 0 14px rgba(246, 185, 59, 0.25);
   }
   50% {
-    transform: translateY(-7px);
-    box-shadow: 0 12px 30px rgba(246, 185, 59, 0.35);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5), 0 0 20px rgba(246, 185, 59, 0.45);
   }
 }
 

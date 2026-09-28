@@ -32,8 +32,8 @@ window.WEDDING_DATA = {
   // Tamil heading exactly as printed on the customer's card.
   greetingTamil: "திருமண விழா அழைப்பித்தம்",
   greetingEnglish: "Shubha Vivaham",
-  // "ஸ்ரீ பண்டியத்தின் துணை" — the blessing line printed above the card title.
-  blessingTamil: "ஸ்ரீ பண்டியத்தின் துணை",
+  // "ஸ்ரீ பச்சையம்மன் துணை" — Auspicious blessing in Tamil requested by customer
+  blessingTamil: "ஸ்ரீ பச்சையம்மன் துணை",
 
   // ----------------------------------------------------------- invitation --
   // Full invitation wording, in the card's own order and spelling.
